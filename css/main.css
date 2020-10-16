@@ -1,0 +1,629 @@
+@font-face {
+    font-family: title;
+    src: url("https://static.wixstatic.com/ufonts/09374c_6bb11670e04148429125905b1c9cc00c/woff/file.woff") format("woff"), url("https://static.wixstatic.com/ufonts/09374c_6bb11670e04148429125905b1c9cc00c/woff2/file.woff2") format("woff2"), url("https://static.wixstatic.com/ufonts/09374c_6bb11670e04148429125905b1c9cc00c/ttf/file.ttf") format("ttf");
+}
+@import url('https://fonts.googleapis.com/css2?family=Codystar&family=Covered+By+Your+Grace&family=Dawning+of+a+New+Day&family=Montserrat:wght@200;400;500&family=Playfair+Display&family=Poppins:wght@200;400;500&family=Prata&display=swap');
+
+
+*{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+/* HEADER */
+
+.toggle-menu {
+    top : 0;
+    width: 30px;
+    height: 30px;
+    margin: 30px;
+    position: fixed;
+    z-index: 1000;
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 5px;
+    background-color: rgb(19, 19, 19);
+    margin: 6px 0;
+    transition: 0.4s;
+    z-index: 10;
+}
+/* Rotate 1st, fade 2nd, rotate 3rd*/
+.change .bar1 { 
+  -webkit-transform: rotate(-45deg) translate(-9px,6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 { 
+  -webkit-transform: rotate(45deg) translate(-8px,-8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+
+.side-bar {
+    z-index: 1000;
+    position: fixed;
+    top : 70px;
+    left: 20px;
+    width: 130px;
+    height: 200px;
+    background-color: #f1dfdbef;
+    /* z-index: 10; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    visibility: hidden;
+    /* background-color: rgba(0, 0, 0, 0.911); */
+    
+}
+
+.side-bar ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 30px;
+    list-style: none;
+}
+
+.side-bar ul li a{
+    display: block;
+    list-style: none;
+    font-size: 11px;
+    font-family: 'Roboto', sans-serif;
+    /* color: whitesmoke */
+    color: black;
+}
+.side-bar ul li a:hover {
+   color: rgb(253, 173, 0);
+}
+
+/* INDEX OR HOME */
+body {
+    overflow: scroll;
+}
+#home{
+    width: 100%;
+    height: 130vh;
+    padding-bottom: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    /* background: rgb(255,240,234);
+    background: linear-gradient(180deg, rgba(255,240,234,1) 0%, rgba(255,255,255,0.07466736694677867) 40%); */
+    background: linear-gradient(180deg, rgba(255,255,255,0.5), 5%, rgba(255,255,255) 85%, rgba(255,255,255,0) 100%), url(../asset/backlogo.jpg);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 15%, rgba(255,255,255) 100%), url(../asset/backlogo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+.landing{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url(../asset/backlogo.jpg); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#landing-effect{
+    z-index: 1;
+    font-family: title;
+    font-weight: bolder;
+}
+.title{ font-family: title; font-weight: bolder;}
+.slogan{ font-family:'Covered By Your Grace', cursive;}
+
+.landing h1{ font-size: 65px; padding:20px;}
+.landing h2{ 
+    position: fix; 
+    font-size: 35px; 
+    padding:20 auto; 
+    font-family: 'Codystar', cursive;
+    font-family: 'Covered By Your Grace', cursive;
+}
+.landing h3{ 
+    font-size: 35px; 
+    font-family: 'Codystar', cursive;
+    font-family: 'Amaranth', sans-serif;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Magra', sans-serif;
+    font-family: 'Staatliches', cursive;
+    /* font-family: 'Poppins', sans-serif; */
+    letter-spacing: 4px;
+    font-weight: 800;
+    padding: 0px 20px;
+    color: #b1f1fce3;
+    /* color: #91bbb5; */
+    /* background-color:#f1dfdbd0;
+    background-color:#ecc4bbd0; */
+    /* border: 1px solid #c4c4c4; */
+    text-transform: uppercase;
+    border-radius: 2em;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+.landing p, .landing p b {
+    display: inline-block;
+    padding: 10px;
+    width: 500px;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+/* ABOUT */
+#about{
+    width: 100%;
+    height: 130vh;
+    /* height: 150%; */
+    /* padding: 50px 0px; */
+    padding-bottom: 30vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(255,255,255,0.5), 5%, rgba(255,255,255) 85%, rgba(255,255,255,0) 100%), url(../asset/backlogo.jpg);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 15%, rgba(255,255,255) 100%), url(../asset/backlogo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+.profile{
+    width: 95vh;
+    height: 95vh;
+    align-items: center;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    /* background-image: url(../asset/backlogo.jpg); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+ .profile h1{
+    font-family: title;
+    font-weight: bolder;
+    padding:0px 0px 0px 0px;
+    font-size: 30px;
+    z-index: 10;
+    font-size: 68px;
+    margin-bottom: -100px;
+    position: sticky;
+    
+}
+.profile h3 {
+    padding-top: 10px;
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 25px;
+}
+.profile h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+.profile p{
+    display: inline-block;
+    padding: 5px 0px 10px 0px;
+    width: 540px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    /* padding-bottom: 50px; */
+    text-align: justify;
+}
+.profile img{
+    width: 300px;
+    border-radius: 50%;
+    margin-bottom: 13px;
+    z-index: 0;
+    box-shadow: 3px 2px 4px black;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(30deg);
+  }
+}
+.profile img:hover{
+    /* width: 300px;
+    border-radius: 50%;
+    margin-bottom: 13px;
+    z-index: 0; */
+    /* box-shadow: 3px 2px 3px black; */
+    animation: rotate 2s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+.socialmedia{
+    padding-top: 15px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border:  5px auto;
+}
+
+.socialmedia img{
+    width: 40px;
+    margin: 5px;
+    display: inline-block; 
+}
+/* GITHUB */
+#github_contribution{
+    width: 100%;
+    height: 150vh;
+    /* padding: 50px 0px; */
+    padding-bottom: 70px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(255,255,255,0.5), 5%, rgba(255,255,255) 85%, rgba(255,255,255,0) 100%), url(../asset/backlogo.jpg);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 15%, rgba(255,255,255) 100%), url(../asset/backlogo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+#github_contribution .imgCont {
+    margin: auto;
+    margin-top: 0px;
+    padding: 10px;
+    border-radius: 1rem;
+    /* background-color: rgba(255, 255, 255, 0.692); */
+    /* border: 1px solid #e1e4e8; */
+}
+.template {
+    display: inline-flex;
+    margin: 150px auto 80px auto;
+}
+
+.github-title{
+    /* margin-left: 300px; */
+    position: sticky;
+    z-index: 2;
+}
+.github-title h1{
+    font-family: title;
+    font-weight: bolder;
+    font-size: 30px;
+    z-index: 10;
+    font-size: 50px;
+    margin-bottom: -100px;
+    margin-left: -180px;
+    position: sticky;
+}
+.github-title h2{
+    font-family: title;
+    font-weight: bolder;
+    font-size: 30px;
+    font-size: 50px;
+}
+.github-pinner {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+    margin-left: -40px;
+}
+
+/* CONTACT */
+.contact {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    text-align: center;
+    background-image: url(asset/10.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.getintouch{
+    width:50%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../asset/backlogo1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.getintouch p{
+    width: 250px;
+    padding: 30px auto;
+    margin: 30px auto;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact-form {
+    width:50%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Covered By Your Grace', cursive;
+}
+
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-form input {
+    width: 300px;
+    height: 30px;
+    margin-bottom: 15px;
+    font-family: 'Covered By Your Grace', cursive;
+    color: black;
+    background-color: #f1dfdbef;
+}
+
+.contact-form label {
+    font-family: 'Montserrat', sans-serif;
+    height: 20px;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.contact-form textarea {
+    width: 300px;
+    height: 100px;
+    margin-bottom: 15px;
+    font-family: 'Covered By Your Grace', cursive;
+    background-color: rgba(255, 255, 255, 0.646);
+    color: black;
+}
+
+.contact-form #submit {
+    font-family: ;
+    width: 80px;
+    height: 60px;
+    float: right;
+    font-family: title;
+    color: white;
+    background-color: black;
+}
+.contact-form #submit:hover {
+    width: 80px;
+    height: 60px;
+    background-color: rgba(253, 173, 0, 0.571);
+    color: rgb(0, 0, 0);
+}
+
+/* GALLERY */
+
+#gallery {
+    top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    /* height: 100%; */
+}
+
+
+.gallery {
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    margin: 25px 0px 100px 0px;
+    padding: 0px 0px 50px 0px;
+}
+.gallery h1{
+    text-align: center;
+    margin: 50px 0 0px 0;
+    font-size: 30px
+}
+.gallery p{
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0 auto;
+    font-family: 'Playfair Display', serif;
+}
+
+
+/*----- SLIDESHOW -----*/
+
+.slideshow-container {
+    object-fit: fill;
+    max-width: 10000px;
+    height: auto;
+    display: block;
+    position: relative;
+    margin: 25px 0px 100px 0px;
+    padding: 0px 0px 50px 0px;
+}
+
+.mySlides {
+    object-fit: fill;
+    display: none;
+    height: 400px;
+}
+
+.mySlides img{
+    width: auto;
+    height: 400px;
+}
+/* .mySlides img:hover{
+    filter: grayscale(100%);
+} */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 10px;
+    color: rgb(253, 173, 0);
+    font-weight: bold;
+    font-size: 20px;
+    transition: .6s ease;
+    border-radius: 0 3px 3px 0
+}
+
+.next {
+    right: -50px;
+    border-radius: 3px 3px 3px 3px
+}
+
+.prev {
+    left: -50px;
+    border-radius: 3px 3px 3px 3px
+}
+
+.prev:hover,
+.next:hover {
+    color: rgba(17, 17, 16, 0.755);
+    background-color: rgba(255, 211, 193, 0.748)
+}
+
+.text {
+    color:  rgb(255, 211, 193);
+    font-size: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color:  rgba(17, 17, 16, 0.755);
+    font-family: 'Covered By Your Grace', cursive;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0
+}
+
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 3px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .6s ease
+}
+
+.active,
+.dot:hover {
+    background-color: #717171
+}
+
+
+
+/*GRIDDING PHOTO THUMBNAIL*/
+
+.photo{
+    float: left;
+    width: 32.8%;
+    height: 300px;
+}
+
+.gridphoto img{
+    filter: grayscale(100%);
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform .2s;
+}
+
+.gridphoto img:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5); 
+    filter: grayscale(0%);
+    z-index: 100;
+}
+.gridphoto:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-bottom: 50px;
+}
+
+/* FOOTER */
+footer{
+    width: 100%;
+    padding: 20px 0px;
+    background-color: #f1dfdbef; 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer p{
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 15px
+}
+
+.quote{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    text-align: center;
+}
+.copyright{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px 0px;
+    font-size: 10px;
+    text-align: center;
+    font-style: italic;
+}
