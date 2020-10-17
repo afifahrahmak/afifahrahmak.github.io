@@ -101,8 +101,8 @@ body {
     justify-content: space-around;
     /* background: rgb(255,240,234);
     background: linear-gradient(180deg, rgba(255,240,234,1) 0%, rgba(255,255,255,0.07466736694677867) 40%); */
-    background: linear-gradient(180deg, rgba(255,255,255,0.5), 5%, rgba(255,255,255) 85%, rgba(255,255,255,0) 100%), url(../asset/backlogo.jpg);
-    background: linear-gradient(180deg, rgba(255,255,255,0) 15%, rgba(255,255,255) 100%), url(../asset/backlogo.jpg);
+    background: linear-gradient(180deg, rgba(255,255,255,0.5), 5%, rgba(255,255,255) 85%, rgba(255,255,255,0) 100%), url(../assets/backlogo.jpg);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 15%, rgba(255,255,255) 100%), url(../assets/backlogo.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -116,7 +116,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background-image: url(../asset/backlogo.jpg); */
+    /* background-image: url(../assets/backlogo.jpg); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -182,8 +182,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(180deg, rgba(255,255,255,0.5), 5%, rgba(255,255,255) 85%, rgba(255,255,255,0) 100%), url(../asset/backlogo.jpg);
-    background: linear-gradient(180deg, rgba(255,255,255,0) 15%, rgba(255,255,255) 100%), url(../asset/backlogo.jpg);
+    background: linear-gradient(180deg, rgba(255,255,255,0.5), 5%, rgba(255,255,255) 85%, rgba(255,255,255,0) 100%), url(../assets/backlogo.jpg);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 15%, rgba(255,255,255) 100%), url(../assets/backlogo.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -199,7 +199,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    /* background-image: url(../asset/backlogo.jpg); */
+    /* background-image: url(../assets/backlogo.jpg); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -286,8 +286,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(180deg, rgba(255,255,255,0.5), 5%, rgba(255,255,255) 85%, rgba(255,255,255,0) 100%), url(../asset/backlogo.jpg);
-    background: linear-gradient(180deg, rgba(255,255,255,0) 15%, rgba(255,255,255) 100%), url(../asset/backlogo.jpg);
+    background: linear-gradient(180deg, rgba(255,255,255,0.5), 5%, rgba(255,255,255) 85%, rgba(255,255,255,0) 100%), url(../assets/backlogo.jpg);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 15%, rgba(255,255,255) 100%), url(../assets/backlogo.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -340,7 +340,7 @@ body {
     display: flex;
     box-sizing: border-box;
     text-align: center;
-    background-image: url(asset/10.jpg);
+    background-image: url(assets/10.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -354,7 +354,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(../asset/backlogo1.jpg);
+    background-image: url(../assets/backlogo1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
