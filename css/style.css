@@ -214,15 +214,19 @@ body {
 
 /* MARK: - Repo Styling */
 .github-pinner #gp-container-repo {
-  /* position: relative; */
+  position: relative;
   height: inherit;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
 }
 
 .github-pinner #gp-container-repo .gp-title {
   text-decoration: none;
   color: #0366d6;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600 !important;
+  text-align: left !important;
 }
 
 .github-pinner #gp-container-repo .gp-title:hover {
@@ -232,16 +236,27 @@ body {
 .github-pinner #gp-container-repo .gp-desc {
   margin-top: 5px;
   color: #586069 !important;
-  font-size: 12px !important;
+  font-size: 10px !important;
+  text-align: left !important;
 }
 
 .github-pinner #gp-container-repo #gp-stats .gp-stat {
+  text-decoration: none;
+  color: #586069 !important;
+  font-size: 11px !important;
+  display: inline-block;
+  margin: 0 0;
+  margin-left: 15px;
+  text-align: left !important;
+}
+.github-pinner #gp-container-repo #gp-stats .gp-stat p {
   text-decoration: none;
   color: #586069 !important;
   font-size: 12px !important;
   display: inline-block;
   margin: 0 0;
   margin-left: 15px;
+  text-align: left !important;
 }
 
 .github-pinner #gp-container-repo #gp-stats .gp-stat:first-child {
@@ -251,6 +266,7 @@ body {
 .github-pinner #gp-container-repo #gp-stats .gp-stat .gp-octicon {
   vertical-align: text-bottom;
   display: inline-block;
+  left: 0 !important;
   fill: currentColor;
   margin-right: 3px;
 }
