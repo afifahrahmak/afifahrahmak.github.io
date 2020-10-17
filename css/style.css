@@ -214,7 +214,7 @@ body {
 
 /* MARK: - Repo Styling */
 .github-pinner #gp-container-repo {
-  position: relative;
+  /* position: relative; */
   height: inherit;
 }
 
