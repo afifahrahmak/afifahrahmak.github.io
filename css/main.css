@@ -296,27 +296,31 @@ body {
 }
 
 .github-title{
-    /* margin-left: 300px; */
-    position: sticky;
+    margin-left: -350px;
+    /* position: sticky; */
     z-index: 2;
     margin-top: 150px;
-
+    margin-bottom: -90px;
 }
 .github-title h1{
     font-family: title;
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 59px !important;
     z-index: 10;
     font-size: 50px;
-    margin-bottom: -100px;
-    margin-left: -180px;
+    margin-bottom: -120px;
+    margin-left: -120px;
     position: sticky;
+    text-shadow: linen 2px 2px 2px;
 }
 .github-title h2{
     font-family: title;
+    margin-right: -160px;
     font-weight: bolder;
     font-size: 30px;
+    text-shadow: linen 2px 2px 2px;
     font-size: 50px;
+    z-index: 20;
 }
 #github_contribution .imgCont {
     margin: auto;
@@ -329,6 +333,7 @@ body {
 .github-template {
     display: flex !important;
     flex-direction: row !important;
+    margin-right: -120px;
 }
 
 /* CONTACT */

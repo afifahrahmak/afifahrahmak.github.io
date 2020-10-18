@@ -24,16 +24,16 @@ var toggle = function (x) {
 
 //------landing-HOME-TYPEWRITER EFFECT
 
-var i = 0;
-var logo = function typeWriter() {
-    let txt = 'Afifah Rahma K';
-    if (i < txt.length) {
-        document.getElementById('landing-effect').innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, 180);
-    }
-}
-logo()
+// var i = 0;
+// var logo = function typeWriter() {
+//     let txt = 'Afifah Rahma K';
+//     if (i < txt.length) {
+//         document.getElementById('landing-effect').innerHTML += txt[i];
+//         i++;
+//         setTimeout(typeWriter, 10);
+//     }
+// }
+// logo()
 
 
 var line = document.getElementById("slogan")
