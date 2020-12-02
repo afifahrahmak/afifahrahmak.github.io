@@ -1,21 +1,21 @@
 
 //------- MENU (NAVBAR) SET
-var toggleStat = false;
-var toggle = function (x) {
+let toggleStat = false;
+let toggle = function (x) {
     x.classList.toggle("change");
-    var getSidebar = document.querySelector('.side-bar');
-    var getSidebarLink = document.querySelector('.side-bar a');
+    let getSidebar = document.querySelector('.side-bar');
+    let getSidebarLink = document.querySelector('.side-bar a');
 
     if (toggleStat === false) {
         getSidebar.style.visibility = 'visible';
-        for (var i = 0; i < getSidebarLink.length; i++) {
+        for (let i = 0; i < getSidebarLink.length; i++) {
             getSidebarLink[i].style.opacity = '1';
         }
         toggleStat = true;
     }
     else if (toggleStat === true) {
         getSidebar.style.visibility = 'hidden';
-        for (var i = 0; i < getSidebarLink.length; i++) {
+        for (let i = 0; i < getSidebarLink.length; i++) {
             getSidebarLink[i].style.opacity = '0';
         }
         toggleStat = false;
@@ -24,8 +24,8 @@ var toggle = function (x) {
 
 //------landing-HOME-TYPEWRITER EFFECT
 
-// var i = 0;
-// var logo = function typeWriter() {
+// let i = 0;
+// let logo = function typeWriter() {
 //     let txt = 'Afifah Rahma K';
 //     if (i < txt.length) {
 //         document.getElementById('landing-effect').innerHTML += txt[i];
@@ -36,9 +36,9 @@ var toggle = function (x) {
 // logo()
 
 
-var line = document.getElementById("slogan")
-var txts = ['a coder', 'a content creator', 'a fullstack developer', 'also an IT instructor'];
-var speed = 50
+let line = document.getElementById("slogan")
+let txts = ['a coder', 'a content creator', 'a fullstack developer', 'also an IT instructor'];
+let speed = 50
 
 async function typewriter(txt) {
     for (let i = 0; i < txt.length; i++) {
