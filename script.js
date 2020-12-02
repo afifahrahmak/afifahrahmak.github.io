@@ -24,17 +24,6 @@ let toggle = function (x) {
 
 //------landing-HOME-TYPEWRITER EFFECT
 
-// let i = 0;
-// let logo = function typeWriter() {
-//     let txt = 'Afifah Rahma K';
-//     if (i < txt.length) {
-//         document.getElementById('landing-effect').innerHTML += txt[i];
-//         i++;
-//         setTimeout(typeWriter, 10);
-//     }
-// }
-// logo()
-
 
 let line = document.getElementById("slogan")
 let txts = ['a coder', 'a content creator', 'a fullstack developer', 'also an IT instructor'];
@@ -69,6 +58,3 @@ function delay(ms) {
 }
 
 writeLoop()
-
-
-//------GALLERY-SLIDESHOW 

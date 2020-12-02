@@ -10,7 +10,7 @@
     padding: 0;
     margin: 0;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins';
     box-sizing: border-box;
     /* border: 1px solid red; */
 }
@@ -89,7 +89,13 @@
 /* INDEX OR HOME */
 body {
     overflow: scroll;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 15%, rgba(255,255,255) 100%), url(../assets/backlogo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
 }
+
 #home{
     width: 100%;
     height: 130vh;
@@ -99,14 +105,6 @@ body {
     align-items: center;
     text-align: center;
     justify-content: space-around;
-    /* background: rgb(255,240,234);
-    background: linear-gradient(180deg, rgba(255,240,234,1) 0%, rgba(255,255,255,0.07466736694677867) 40%); */
-    background: linear-gradient(180deg, rgba(255,255,255,0.5), 5%, rgba(255,255,255) 85%, rgba(255,255,255,0) 100%), url(../assets/backlogo.jpg);
-    background: linear-gradient(180deg, rgba(255,255,255,0) 15%, rgba(255,255,255) 100%), url(../assets/backlogo.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
 }
 
 .landing{
@@ -115,12 +113,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    /* background-image: url(../assets/backlogo.jpg); */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    justify-content: center; 
 }
 
 #landing-effect{
@@ -141,20 +134,11 @@ body {
 }
 .landing h3{ 
     font-size: 35px; 
-    font-family: 'Codystar', cursive;
-    font-family: 'Amaranth', sans-serif;
-    font-family: 'Anton', sans-serif;
-    font-family: 'Magra', sans-serif;
     font-family: 'Staatliches', cursive;
-    /* font-family: 'Poppins', sans-serif; */
     letter-spacing: 4px;
     font-weight: 800;
     padding: 0px 20px;
     color: #b1f1fce3;
-    /* color: #91bbb5; */
-    /* background-color:#f1dfdbd0;
-    background-color:#ecc4bbd0; */
-    /* border: 1px solid #c4c4c4; */
     text-transform: uppercase;
     border-radius: 2em;
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
@@ -174,36 +158,21 @@ body {
 #about{
     width: 100%;
     height: 130vh;
-    /* height: 150%; */
-    /* padding: 50px 0px; */
     padding-bottom: 30vh;
-    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(180deg, rgba(255,255,255,0.5), 5%, rgba(255,255,255) 85%, rgba(255,255,255,0) 100%), url(../assets/backlogo.jpg);
-    background: linear-gradient(180deg, rgba(255,255,255,0) 15%, rgba(255,255,255) 100%), url(../assets/backlogo.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     
 }
 .profile{
     width: 95vh;
     height: 95vh;
     align-items: center;
-    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    /* background-image: url(../assets/backlogo.jpg); */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
  .profile h1{
@@ -251,48 +220,39 @@ body {
   }
 }
 .profile img:hover{
-    /* width: 300px;
-    border-radius: 50%;
-    margin-bottom: 13px;
-    z-index: 0; */
-    /* box-shadow: 3px 2px 3px black; */
     animation: rotate 2s;
     animation-fill-mode: forwards;
     animation-direction: alternate;
 }
+.profile a, button{ 
+    padding: 7px;
+    margin: 10px;
+    border-radius: 2em;
+    background: transparent;
+    font-family: 'Covered By Your Grace', cursive;
+    font-family: 'Staatliches', cursive;
 
-.socialmedia{
-    padding-top: 15px;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border:  5px auto;
-}
-
-.socialmedia img{
-    width: 40px;
-    margin: 5px;
-    display: inline-block; 
+    letter-spacing: 5px;
+    font-size: 15px;
+    font-weight: 900;
+    text-shadow: rgb(209, 201, 201) 2px 2px 2px;
+    color: #d16644;
 }
 /* GITHUB */
 #github_contribution{
     width: 100%;
     height: 150vh;
-    /* padding: 50px 0px; */
     padding-bottom: 70px;
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(180deg, rgba(255,255,255,0.5), 5%, rgba(255,255,255) 85%, rgba(255,255,255,0) 100%), url(../assets/backlogo.jpg);
     background: linear-gradient(180deg, rgba(255,255,255,0) 15%, rgba(255,255,255) 100%), url(../assets/backlogo.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed; 
-    
 }
 
 .github-title{
@@ -339,10 +299,11 @@ body {
 /* CONTACT */
 .contact {
     width: 100%;
+    height: 90vh;
     display: flex;
     box-sizing: border-box;
     text-align: center;
-    background-image: url(assets/10.jpg);
+    background-image: url(../assets/10.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -351,7 +312,6 @@ body {
 
 .getintouch{
     width:50%;
-    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -367,18 +327,46 @@ body {
     width: 250px;
     padding: 30px auto;
     margin: 30px auto;
-    font-size: 12px;
+    font-size: 13px;
     font-family: 'Montserrat', sans-serif;
+}
+.socialmedia{
+    padding-top: 15px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border:  5px auto;
+}
+.socialmedia img{
+    width: 40px;
+    margin: 5px;
+    display: inline-block; 
+    border-radius: 50%;
+    margin-bottom: 13px;
+    z-index: 0;
+    box-shadow: 3px 2px 4px black;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(30deg);
+  }
+}
+.socialmedia img:hover{
+    animation: rotate 2s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
 }
 
 .contact-form {
     width:50%;
-    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: 'Covered By Your Grace', cursive;
 }
 
 .contact-form form{
@@ -389,13 +377,16 @@ body {
     text-align: center;
 }
 
-.contact-form input {
+.contact-form input, textarea {
     width: 300px;
-    height: 30px;
+    height: 40px;
     margin-bottom: 15px;
-    font-family: 'Covered By Your Grace', cursive;
+    font-size: 12px;
     color: black;
     background-color: #f1dfdbef;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 2px 2px 2px black;
 }
 
 .contact-form label {
@@ -409,189 +400,21 @@ body {
     width: 300px;
     height: 100px;
     margin-bottom: 15px;
-    font-family: 'Covered By Your Grace', cursive;
     background-color: rgba(255, 255, 255, 0.646);
-    color: black;
 }
 
 .contact-form #submit {
-    font-family: ;
     width: 80px;
-    height: 60px;
     float: right;
-    font-family: title;
+    /* font-family: title; */
     color: white;
     background-color: black;
+    border: none;
+    border-radius: 2em;
 }
 .contact-form #submit:hover {
-    width: 80px;
-    height: 60px;
     background-color: rgba(253, 173, 0, 0.571);
     color: rgb(0, 0, 0);
-}
-
-/* GALLERY */
-
-#gallery {
-    top: 5vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    /* height: 100%; */
-}
-
-
-.gallery {
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    height: 80px;
-    margin: 25px 0px 100px 0px;
-    padding: 0px 0px 50px 0px;
-}
-.gallery h1{
-    text-align: center;
-    margin: 50px 0 0px 0;
-    font-size: 30px
-}
-.gallery p{
-    margin-bottom: 20px;
-    text-align: center;
-    padding: 0 auto;
-    font-family: 'Playfair Display', serif;
-}
-
-
-/*----- SLIDESHOW -----*/
-
-.slideshow-container {
-    object-fit: fill;
-    max-width: 10000px;
-    height: auto;
-    display: block;
-    position: relative;
-    margin: 25px 0px 100px 0px;
-    padding: 0px 0px 50px 0px;
-}
-
-.mySlides {
-    object-fit: fill;
-    display: none;
-    height: 400px;
-}
-
-.mySlides img{
-    width: auto;
-    height: 400px;
-}
-/* .mySlides img:hover{
-    filter: grayscale(100%);
-} */
-
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 10px;
-    color: rgb(253, 173, 0);
-    font-weight: bold;
-    font-size: 20px;
-    transition: .6s ease;
-    border-radius: 0 3px 3px 0
-}
-
-.next {
-    right: -50px;
-    border-radius: 3px 3px 3px 3px
-}
-
-.prev {
-    left: -50px;
-    border-radius: 3px 3px 3px 3px
-}
-
-.prev:hover,
-.next:hover {
-    color: rgba(17, 17, 16, 0.755);
-    background-color: rgba(255, 211, 193, 0.748)
-}
-
-.text {
-    color:  rgb(255, 211, 193);
-    font-size: 15px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background-color:  rgba(17, 17, 16, 0.755);
-    font-family: 'Covered By Your Grace', cursive;
-}
-
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0
-}
-
-.dot {
-    cursor: pointer;
-    height: 10px;
-    width: 10px;
-    margin: 0 3px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color .6s ease
-}
-
-.active,
-.dot:hover {
-    background-color: #717171
-}
-
-
-
-/*GRIDDING PHOTO THUMBNAIL*/
-
-.photo{
-    float: left;
-    width: 32.8%;
-    height: 300px;
-}
-
-.gridphoto img{
-    filter: grayscale(100%);
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    transition: transform .2s;
-}
-
-.gridphoto img:hover{
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); 
-    transform: scale(1.5); 
-    filter: grayscale(0%);
-    z-index: 100;
-}
-.gridphoto:after {
-    content: "";
-    display: table;
-    clear: both;
-    margin-bottom: 50px;
 }
 
 /* FOOTER */
@@ -609,15 +432,6 @@ footer{
 footer p{
     font-family: 'Covered By Your Grace', cursive;
     font-size: 15px
-}
-
-.quote{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    font-size: 12px;
-    text-align: center;
 }
 .copyright{
     width: 100%;
