@@ -2,8 +2,6 @@
     font-family: title;
     src: url("https://static.wixstatic.com/ufonts/09374c_6bb11670e04148429125905b1c9cc00c/woff/file.woff") format("woff"), url("https://static.wixstatic.com/ufonts/09374c_6bb11670e04148429125905b1c9cc00c/woff2/file.woff2") format("woff2"), url("https://static.wixstatic.com/ufonts/09374c_6bb11670e04148429125905b1c9cc00c/ttf/file.ttf") format("ttf");
 }
-@import url('https://fonts.googleapis.com/css2?family=Codystar&family=Covered+By+Your+Grace&family=Dawning+of+a+New+Day&family=Montserrat:wght@200;400;500&family=Playfair+Display&family=Poppins:wght@200;400;500&family=Prata&display=swap');
-
 
 *{
     text-decoration: none;
@@ -241,9 +239,8 @@ body {
 /* GITHUB */
 #github_contribution{
     width: 100%;
-    height: 150vh;
+    height: 130vh;
     padding-bottom: 70px;
-    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: center;
