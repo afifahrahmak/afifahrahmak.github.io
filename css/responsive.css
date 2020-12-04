@@ -1,0 +1,374 @@
+@font-face {
+    font-family: title;
+    src: url("https://static.wixstatic.com/ufonts/09374c_6bb11670e04148429125905b1c9cc00c/woff/file.woff") format("woff"), url("https://static.wixstatic.com/ufonts/09374c_6bb11670e04148429125905b1c9cc00c/woff2/file.woff2") format("woff2"), url("https://static.wixstatic.com/ufonts/09374c_6bb11670e04148429125905b1c9cc00c/ttf/file.ttf") format("ttf");
+}
+
+*{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+/* INDEX OR HOME */
+body {
+    overflow: scroll;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 15%, rgba(255,255,255) 100%), url(../assets/backlogo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+#home{
+    /* width: 100%; */
+    /* height: 130vh; */
+    /* padding-bottom: 30vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.landing{
+    width: 100%;
+    /* height: 85vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+#landing-effect{
+    z-index: 1;
+    font-family: title;
+    font-weight: bolder;
+}
+.title{ font-family: title; font-weight: bolder;}
+.slogan{ font-family:'Covered By Your Grace', cursive;}
+
+.landing h1{ 
+    font-size: 30px !important; 
+    padding:20px;
+}
+.landing h2{ 
+    position: fix; 
+    font-size: 35px; 
+    padding:20 auto; 
+    font-family: 'Codystar', cursive;
+    font-family: 'Covered By Your Grace', cursive;
+}
+.landing h3{ 
+    font-size: 35px; 
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 4px;
+    font-weight: 800;
+    padding: 0px 20px;
+    color: #b1f1fce3;
+    text-transform: uppercase;
+    border-radius: 2em;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+.landing p, .landing p b {
+    display: inline-block;
+    padding: 10px;
+    width: 600px;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+/* ABOUT */
+#about{
+    width: 100%;
+    height: 130vh;
+    padding-bottom: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.profile{
+    width: 95vh;
+    height: 95vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+ .profile h1{
+    font-family: title;
+    font-weight: bolder;
+    padding:0px 0px 0px 0px;
+    font-size: 30px;
+    z-index: 10;
+    font-size: 68px;
+    margin-bottom: -100px;
+    position: sticky;
+    
+}
+.profile h3 {
+    padding-top: 10px;
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 25px;
+}
+.profile h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+.profile p{
+    display: inline-block;
+    padding: 5px 0px 10px 0px;
+    width: 540px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    /* padding-bottom: 50px; */
+    text-align: justify;
+}
+.profile img{
+    width: 300px;
+    border-radius: 50%;
+    margin-bottom: 13px;
+    z-index: 0;
+    box-shadow: 3px 2px 4px black;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(30deg);
+  }
+}
+.profile img:hover{
+    animation: rotate 2s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+.profile a, button{ 
+    padding: 7px;
+    margin: 10px;
+    border-radius: 2em;
+    background: transparent;
+    font-family: 'Covered By Your Grace', cursive;
+    font-family: 'Staatliches', cursive;
+
+    letter-spacing: 5px;
+    font-size: 15px;
+    font-weight: 900;
+    text-shadow: rgb(209, 201, 201) 2px 2px 2px;
+    color: #d16644;
+}
+/* GITHUB */
+#github_contribution{
+    width: 100%;
+    height: 130vh;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 15%, rgba(255,255,255) 100%), url(../assets/backlogo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+.github-title{
+    margin-left: -350px;
+    /* position: sticky; */
+    z-index: 2;
+    margin-top: 150px;
+    margin-bottom: -90px;
+}
+.github-title h1{
+    font-family: title;
+    font-weight: bolder;
+    font-size: 59px !important;
+    z-index: 10;
+    font-size: 50px;
+    margin-bottom: -120px;
+    margin-left: -120px;
+    position: sticky;
+    text-shadow: linen 2px 2px 2px;
+}
+.github-title h2{
+    font-family: title;
+    margin-right: -160px;
+    font-weight: bolder;
+    font-size: 30px;
+    text-shadow: linen 2px 2px 2px;
+    font-size: 50px;
+    z-index: 20;
+}
+#github_contribution .imgCont {
+    margin: auto;
+    margin-top: 0px;
+    padding: 10px;
+    border-radius: 1rem;
+    /* background-color: rgba(255, 255, 255, 0.692); */
+    /* border: 1px solid #e1e4e8; */
+}
+.github-template {
+    display: flex !important;
+    flex-direction: row !important;
+    margin-right: -120px;
+}
+
+/* CONTACT */
+.contact {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    box-sizing: border-box;
+    text-align: center;
+    background-image: url(../assets/10.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.getintouch{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/backlogo1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.getintouch p{
+    width: 250px;
+    padding: 30px auto;
+    margin: 30px auto;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+}
+.socialmedia{
+    padding-top: 15px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border:  5px auto;
+}
+.socialmedia img{
+    width: 40px;
+    margin: 5px;
+    display: inline-block; 
+    border-radius: 50%;
+    margin-bottom: 13px;
+    z-index: 0;
+    box-shadow: 3px 2px 4px black;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(30deg);
+  }
+}
+.socialmedia img:hover{
+    animation: rotate 2s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+.contact-form {
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-form input, textarea {
+    width: 300px;
+    height: 40px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    color: black;
+    background-color: #f1dfdbef;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 2px 2px 2px black;
+}
+
+.contact-form label {
+    font-family: 'Montserrat', sans-serif;
+    height: 20px;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.contact-form textarea {
+    width: 300px;
+    height: 100px;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.646);
+}
+
+.contact-form #submit {
+    width: 80px;
+    float: right;
+    /* font-family: title; */
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 2em;
+}
+.contact-form #submit:hover {
+    background-color: rgba(253, 173, 0, 0.571);
+    color: rgb(0, 0, 0);
+}
+
+/* FOOTER */
+footer{
+    width: 100%;
+    padding: 20px 0px;
+    background-color: #f1dfdbef; 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer p{
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 15px
+}
+.copyright{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px 0px;
+    font-size: 10px;
+    text-align: center;
+    font-style: italic;
+}
